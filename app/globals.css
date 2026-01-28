@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
+/* ============================== */
+/*  URFM Church Design Variables  */
+/* ============================== */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Colors */
+  --urfm-color-primary: #1F5F3A;   /* Deep Green */
+  --urfm-color-accent: #F2C94C;    /* Golden Yellow */
+  --urfm-color-cream: #F9F6F0;     /* Soft Section Background */
+  --urfm-color-white: #FFFFFF;    /* Main Background */
+  --urfm-color-dark: #0F2E1C;      /* Text */
+
+  /* Fonts */
+  --urfm-font-sans: Arial, Helvetica, sans-serif;
+  --urfm-font-serif: "Merriweather", serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ============================== */
+/*  Tailwind Theme Mapping (v4)   */
+/* ============================== */
+@theme {
+  /* Colors */
+  --color-background: var(--urfm-color-white);
+  --color-foreground: var(--urfm-color-dark);
+  --color-primary: var(--urfm-color-primary);
+  --color-accent: var(--urfm-color-accent);
+  --color-cream: var(--urfm-color-cream);
+
+  /* Fonts */
+  --font-sans: var(--urfm-font-sans);
+  --font-serif: var(--urfm-font-serif);
 }
 
+/* ============================== */
+/*  Dark Mode Support             */
+/* ============================== */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-background: #0F2E1C;
+    --color-foreground: #FFFFFF;
   }
 }
 
+/* ============================== */
+/*  Global Base Styles            */
+/* ============================== */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================== */
+/*  Common UI Elements            */
+/* ============================== */
+
+/* Buttons */
+.button {
+  background-color: var(--color-accent);
+  color: var(--urfm-color-dark);
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e6b93b;
+}
+
+/* Navbar / Footer */
+.navbar,
+.footer {
+  background-color: var(--color-primary);
+  color: var(--urfm-color-cream);
+  padding: 1rem 2rem;
+}
+
+/* Section with soft background */
+.section-cream {
+  background-color: var(--color-cream);
+}
+
+/* Links */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #e6b93b;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--urfm-color-dark);
+  font-family: var(--font-serif);
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+p {
+  color: var(--urfm-color-dark);
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
