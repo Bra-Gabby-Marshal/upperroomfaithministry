@@ -14,8 +14,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "URFM",
+  title: {
+    default: "URFM",
+    template: "URFM | %s",
+  },
   description: "Upper Room Faith Ministry",
+  icons: {
+    icon: "/favicon_io/favicon.ico",
+    apple: "/favicon_io/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
