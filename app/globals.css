@@ -5,18 +5,22 @@
 /* ============================== */
 :root {
   /* Colors */
-  --urfm-color-primary: #1F5F3A;
-  /* Deep Green */
-  --urfm-color-accent: #F2C94C;
-  /* Golden Yellow */
-  --urfm-color-cream: #F9F6F0;
-  /* Soft Section Background */
-  --urfm-color-white: #FFFFFF;
-  /* Main Background */
-  --urfm-color-dark: #0F2E1C;
-  /* Text */
+  --urfm-color-primary: #1F5F3A;   /* Deep Green */
+  --urfm-color-accent: #F2C94C;    /* Golden Yellow */
+  --urfm-color-cream: #F9F6F0;     /* Soft Section Background */
+  --urfm-color-white: #FFFFFF;    /* Main Background */
+  --urfm-color-dark: #0F2E1C;      /* Text */
 
-  /* Tailwind mapping */
+  /* Fonts */
+  --urfm-font-sans: Arial, Helvetica, sans-serif;
+  --urfm-font-serif: "Merriweather", serif;
+}
+
+/* ============================== */
+/*  Tailwind Theme Mapping (v4)   */
+/* ============================== */
+@theme {
+  /* Colors */
   --color-background: var(--urfm-color-white);
   --color-foreground: var(--urfm-color-dark);
   --color-primary: var(--urfm-color-primary);
@@ -24,8 +28,6 @@
   --color-cream: var(--urfm-color-cream);
 
   /* Fonts */
-  --urfm-font-sans: Arial, Helvetica, sans-serif;
-  --urfm-font-serif: "Merriweather", serif;
   --font-sans: var(--urfm-font-sans);
   --font-serif: var(--urfm-font-serif);
 }
@@ -33,25 +35,22 @@
 /* ============================== */
 /*  Dark Mode Support             */
 /* ============================== */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --color-background: #0F2E1C;
     --color-foreground: #FFFFFF;
   }
-}
+} */
 
 /* ============================== */
 /*  Global Base Styles            */
 /* ============================== */
-html,
-body,
-#__next {
+body {
   background-color: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans);
   margin: 0;
   padding: 0;
-  min-height: 100vh;
 }
 
 /* ============================== */
