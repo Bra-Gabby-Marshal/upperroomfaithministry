@@ -63,7 +63,7 @@ export default function Footer() {
       <div className="border-t border-white/25">
         <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-5">
           {/* Copyright */}
-          <p className="text-sm text-white/90 text-center sm:text-left  font-bold">
+          <p className="text-sm text-white/90 text-center sm:text-left">
             © {new Date().getFullYear()} Upper Room Faith Ministry. All rights
             reserved.
           </p>
