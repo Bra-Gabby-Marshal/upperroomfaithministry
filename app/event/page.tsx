@@ -32,7 +32,7 @@ export default function EventPage() {
       title: "Night of Nine Lessons & Carols",
       date: "Wednesday, December 24, 2025",
       location: "URFM Auditorium",
-      image: "/events/LessonCarols.jpg",
+      image: "/events/Lesson-Carols.jpg",
     },
     {
       title: "Remember Thy God - Youth Program",
