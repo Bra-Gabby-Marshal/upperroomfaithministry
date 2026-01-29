@@ -25,7 +25,7 @@ export default function MotionMinistryGrid() {
       <MinistryCard title="Women’s Ministry" description="Equipping women to grow spiritually,
               build godly relationships, and serve with purpose." image="/images/ministry-women.jpeg" />
       <MinistryCard title="Men’s Ministry" description="Building strong men of faith, integrity,
-              and leadership through fellowship and prayer." image="/images/ministry-men.jpg" />
+              and leadership through fellowship and prayer." image="/images/ministry-men.jpeg" />
       <MinistryCard title="Children’s Ministry" description="Nurturing children in God’s Word through
               age-appropriate teaching, love, and spiritual foundation." image="/images/ministry-children.jpg" />
       <MinistryCard title="Music Ministry" description="Leading the congregation into God’s presence
