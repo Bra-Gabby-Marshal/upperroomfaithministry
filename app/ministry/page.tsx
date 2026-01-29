@@ -42,7 +42,7 @@ function MinistryPage() {
       </section>
 
 {/* Optional CTA Section */}
-{/* <section className="py-16 bg-white">
+<section className="py-16 bg-white">
   <div className="max-w-5xl mx-auto px-6 text-center">
     <h3 className="text-2xl font-serif font-bold mb-4 text-[var(--color-primary)]">
       Want to Join a Ministry?
@@ -59,7 +59,7 @@ function MinistryPage() {
       Join via WhatsApp
     </a>
   </div>
-</section> */}
+</section>
 
     </main>
   );
