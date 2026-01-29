@@ -4,7 +4,7 @@ import { Phone, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-primary)] text-white mt-24">
+    <footer className="bg-[var(--color-primary)] text-white">
       {/* MAIN CONTENT */}
       <div className="max-w-6xl mx-auto px-6 py-16 grid gap-14 md:grid-cols-3">
         {/* About Us */}
