@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 function ContactPage() {
   return (
-    <section className="relative h-[24vh] md:h-[30vh] w-full overflow-hidden">
+    <section className="relative h-[28vh] md:h-[30vh] w-full overflow-hidden">
       {/* Background Image */}
       <Image
         src="/contact-us.jpg"
