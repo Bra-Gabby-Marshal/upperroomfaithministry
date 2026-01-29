@@ -4,7 +4,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import ContactHero from "@/components/ContactHero";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Upper Room Faith Ministry",
+  title: "Contact Us",
 };
 
 const SectionHeading = ({ title }: { title: string }) => (
