@@ -53,22 +53,21 @@ export default function Footer() {
           >
             Contact Us
           </h4>
-<ul className="space-y-4 text-white">
-  <li className="flex items-center gap-3">
-    <span className="bg-white/15 p-2 rounded-full text-[var(--color-accent)]">
-      <Phone size={16} />
-    </span>
-    <span>+233 54 026 8901</span>
-  </li>
+          <ul className="space-y-4 text-white">
+            <li className="flex items-center gap-3">
+              <span className="bg-white/15 p-2 rounded-full text-[var(--color-accent)]">
+                <Phone size={16} />
+              </span>
+              <span>+233 54 026 8901</span>
+            </li>
 
-  <li className="flex items-center gap-3">
-    <span className="bg-white/15 p-2 rounded-full text-[var(--color-accent)]">
-      <Mail size={16} />
-    </span>
-    <span>urpchurch1@gmail.com</span>
-  </li>
-</ul>
-
+            <li className="flex items-center gap-3">
+              <span className="bg-white/15 p-2 rounded-full text-[var(--color-accent)]">
+                <Mail size={16} />
+              </span>
+              <span>urpchurch1@gmail.com</span>
+            </li>
+          </ul>
         </div>
       </div>
 
