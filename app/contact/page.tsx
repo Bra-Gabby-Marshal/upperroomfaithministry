@@ -42,9 +42,9 @@ export default function ContactPage() {
                 </thead>
                 <tbody className="divide-y">
                   {[
-                    { service: "Sundays", day: "Sunday", time: "8:00 AM – 10:30 AM" },
-                    { service: "Prayers", day: "Monday", time: "8:00 AM – 10:30 AM" },
-                    { service: "Teachings", day: "Thursday", time: "8:00 AM – 10:30 AM" },
+                    { service: "Main", day: "Sundays", time: "8:00 AM – 10:30 AM" },
+                    { service: "Prayers", day: "Mondays", time: "7:00 PM – 8:00 PM" },
+                    { service: "Teachings", day: "Thursdays", time: "7:00 PM – 8:00 PM" },
                   ].map((item, index) => (
                     <tr
                       key={index}
@@ -65,9 +65,8 @@ export default function ContactPage() {
             <SectionHeading title="Reach Out" />
             <div className="rounded-2xl bg-white border border-black/10 shadow-md p-6 sm:p-8 flex flex-col justify-between space-y-4 sm:space-y-6">
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                For prayers, counselling, partnerships, or general enquiries, we
-                warmly invite you to reach out. Our leadership team is ready to
-                walk with you in faith and love.
+                For prayers, counselling, or general enquiries, we
+                warmly invite you to reach out.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -109,7 +108,7 @@ export default function ContactPage() {
                   </span>
                   <div>
                     <strong className="block text-lg font-medium">Location</strong>
-                    <span className="text-gray-600">Accra, Ghana</span>
+                    <span className="text-gray-600">Accra, Ghana (Sowutuom - Omanjor)</span>
                   </div>
                 </div>
 
@@ -117,7 +116,7 @@ export default function ContactPage() {
                 <div className="w-full aspect-[4/3] sm:aspect-[16/9] rounded-xl overflow-hidden border border-black/10 shadow-sm">
                   <iframe
                     title="URFM Location"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.123456789!2d-0.186964184595!3d5.603716996092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9abc1234567%3A0x1234567890abcdef!2sAccra%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1690000000000!5m2!1sen!2sgh"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5158033227026!2d-0.2898166!3d5.6382365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99960609d659%3A0xd5245895cbffb7e3!2sUPPER%20ROOM%20PENTECOSTAL%20CHURCH!5e0!3m2!1sen!2sgh!4v1769711522501!5m2!1sen!2sgh"
                     className="w-full h-full"
                     allowFullScreen
                     loading="lazy"
