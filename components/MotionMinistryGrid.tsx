@@ -31,7 +31,7 @@ export default function MotionMinistryGrid() {
       <MinistryCard title="Music Ministry" description="Leading the congregation into God’s presence
               through worship, praise, and spirit-filled music." image="/images/ministry-music.jpg" />
       <MinistryCard title="Media Ministry" description="Communicating the Gospel through media,
-              technology, and creative digital expressions." image="/images/ministry-media.jpg" />
+              technology, and creative digital expressions." image="/images/ministry-media.png" />
     </motion.div>
   );
 }
