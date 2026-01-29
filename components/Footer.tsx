@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Facebook, Youtube } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -52,10 +53,22 @@ export default function Footer() {
           >
             Contact Us
           </h4>
-          <ul className="space-y-3 text-white">
-            <li>📞 +233 54 026 8901</li>
-            <li>✉️ urpchurch1@gmail.com</li>
-          </ul>
+<ul className="space-y-4 text-white">
+  <li className="flex items-center gap-3">
+    <span className="bg-white/15 p-2 rounded-full text-[var(--color-accent)]">
+      <Phone size={16} />
+    </span>
+    <span>+233 54 026 8901</span>
+  </li>
+
+  <li className="flex items-center gap-3">
+    <span className="bg-white/15 p-2 rounded-full text-[var(--color-accent)]">
+      <Mail size={16} />
+    </span>
+    <span>urpchurch1@gmail.com</span>
+  </li>
+</ul>
+
         </div>
       </div>
 
