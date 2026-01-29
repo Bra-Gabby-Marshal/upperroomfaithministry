@@ -22,7 +22,7 @@ function Navbar() {
 
   const renderLink = (link: typeof navLinks[0], mobile = false) => {
     const active = isActive(link.href);
-    const baseClasses = `px-4 py-2 rounded-full transition-all duration-200 ${
+    const baseClasses = `px-3 py-2 rounded-full transition-all duration-200 ${
       mobile ? "text-center w-full" : ""
     }`;
     const activeClasses = "bg-[var(--color-cream)] !text-[var(--color-primary)] shadow-sm";
@@ -44,7 +44,7 @@ function Navbar() {
 
   return (
     <nav className="bg-[var(--color-primary)] text-[var(--color-cream)] shadow-md sticky top-0 z-50 ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-5">
         <div className="flex items-center justify-between py-3">
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
