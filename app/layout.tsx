@@ -24,6 +24,29 @@ export const metadata: Metadata = {
     icon: "/favicon_io/favicon.ico",
     apple: "/favicon_io/apple-touch-icon.png",
   },
+
+    openGraph: {
+    title: "Upper Room Faith Ministry",
+    description: "A place of faith, prayer, and teaching in Accra, Ghana.",
+    url: "https://upperroomfaithministry.vercel.app/",
+    siteName: "Upper Room Faith Ministry",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Upper Room Faith Ministry",
+      },
+    ],
+    type: "website",
+  },
+
+    twitter: {
+    card: "summary_large_image",
+    title: "Upper Room Faith Ministry",
+    description: "A place of faith, prayer, and teaching in Accra, Ghana.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
