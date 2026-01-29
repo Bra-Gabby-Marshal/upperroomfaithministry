@@ -28,7 +28,7 @@ function ContactHero() {
             Contact Us
           </h1>
 
-          <p className="mt-6 text-base md:text-lg text-[#F9F6F0]/90 leading-relaxed">
+          <p className="mt-3 text-base md:text-lg text-[#F9F6F0]/90 leading-relaxed">
             We’d love to hear from you. Reach out to Upper Room Faith Ministry
             and let’s connect in faith and fellowship.
           </p>
