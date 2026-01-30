@@ -17,7 +17,7 @@ const leaders = [
   {
     name: "Ahiable Kofi Abel",
     role: "Lead Pastor",
-    image: "/images/elder.jpg",
+    image: "/leadership/bilanda.png",
   },
   {
     name: "Nii Armah Donneh",
@@ -82,13 +82,13 @@ export default function Leadership() {
               "
             >
               {/* Image */}
-              <div className="relative h-72 overflow-hidden">
+              <div className="relative h-65 overflow-hidden">
                 <Image
                   src={leader.image}
                   alt={leader.name}
                   fill
                   className="
-                    object-fit
+                    object-contain object-top
                     transition-transform duration-500
                     group-hover:scale-105
                     filter brightness-110 contrast-105
@@ -97,7 +97,7 @@ export default function Leadership() {
               </div>
 
               {/* Content */}
-              <div className="p-7 text-center">
+              <div className="p-5 text-center">
                 <h3 className="text-xl font-serif font-bold mb-1 text-[var(--color-dark)]">
                   {leader.name}
                 </h3>
