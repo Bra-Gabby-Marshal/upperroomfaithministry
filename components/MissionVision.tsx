@@ -29,7 +29,7 @@ export default function MissionVision() {
   ];
 
   return (
-    <section className="py-20 bg-[var(--color-cream)]">
+    <section className="py-10 bg-[var(--color-cream)]">
       <div className="max-w-6xl mx-auto px-6">
         <SectionHeading title="Our Mission & Vision" />
 
