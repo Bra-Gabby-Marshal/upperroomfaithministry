@@ -1,7 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import { motion } from "framer-motion";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 const images = [
   "/memories/1.jpg",
@@ -17,6 +20,9 @@ const images = [
 ];
 
 function Memories() {
+  const [open, setOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   return (
     <section className="py-28 bg-[var(--color-cream)] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
@@ -46,7 +52,11 @@ function Memories() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2, duration: 0.6 }}
-              className="rounded-3xl overflow-hidden shadow-2xl"
+              className="rounded-3xl overflow-hidden shadow-2xl cursor-pointer"
+              onClick={() => {
+                setCurrentIndex(index);
+                setOpen(true);
+              }}
             >
               <div className="relative w-full h-[300px] sm:h-[320px] lg:h-[350px]">
                 <Image
@@ -60,6 +70,14 @@ function Memories() {
           ))}
         </div>
       </div>
+
+      {/* Lightbox */}
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        slides={images.map((src) => ({ src }))}
+        index={currentIndex}
+      />
     </section>
   );
 }
