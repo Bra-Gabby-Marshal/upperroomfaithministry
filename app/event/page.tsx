@@ -63,7 +63,7 @@ export default function EventPage() {
       <section className="bg-[#F9F6F0] py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading title="Upcoming Events" />
-          <p className="text-gray-700 text-center text-lg max-w-2xl mx-auto mb-12">
+          <p className="max-w-3xl mx-auto text-gray-700 text-center text-base sm:text-lg leading-relaxed mb-12">
             Be part of what God is doing at Upper Room Faith Ministry.
           </p>
 
