@@ -24,9 +24,20 @@ const leaders = [
   },
 ];
 
+const SectionHeading = ({ title }: { title: string }) => (
+  <h3
+    className="relative inline-block text-2xl sm:text-3xl lg:text-4xl font-serif font-bold mb-12
+      after:absolute after:left-0 after:-bottom-2
+      after:h-1.5 after:w-24 after:rounded-full
+      after:bg-[var(--color-accent)]"
+  >
+    {title}
+  </h3>
+);
+
 export default function Leadership() {
   return (
-    <section className="py-20 bg-[var(--color-cream)]">
+    <section className="py-24 bg-[var(--color-cream)]">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Title */}
         <motion.div
@@ -34,12 +45,10 @@ export default function Leadership() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-14"
+          className="text-center mb-16"
         >
-          <h2 className="text-3xl font-serif font-bold mb-4">
-            Our Leadership
-          </h2>
-          <p className="max-w-2xl mx-auto">
+          <SectionHeading title="Our Leadership" />
+          <p className="max-w-2xl mx-auto text-[var(--color-dark)]/80 leading-relaxed">
             God-appointed servants committed to shepherding, teaching, and
             leading the church according to His will.
           </p>
@@ -54,27 +63,38 @@ export default function Leadership() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
-              className="bg-white rounded-xl shadow-md overflow-hidden"
+              className="
+                group bg-white rounded-2xl overflow-hidden
+                shadow-md hover:shadow-xl
+                transition-all duration-300
+              "
             >
               {/* Image */}
-              <div className="relative h-72">
+              <div className="relative h-72 overflow-hidden">
                 <Image
                   src={leader.image}
                   alt={leader.name}
                   fill
-                  className="object-cover"
+                  className="
+                    object-cover
+                    transition-transform duration-500
+                    group-hover:scale-105
+                    filter brightness-110 contrast-105
+                  "
                 />
               </div>
 
               {/* Content */}
-              <div className="p-6 text-center">
-                <h3 className="text-xl font-serif font-bold mb-1">
+              <div className="p-7 text-center">
+                <h3 className="text-xl font-serif font-bold mb-1 text-[var(--color-dark)]">
                   {leader.name}
                 </h3>
-                <p className="text-[var(--color-accent)] font-semibold mb-3">
+
+                <p className="text-[var(--color-accent)] font-semibold mb-4 tracking-wide">
                   {leader.role}
                 </p>
-                <p className="text-sm">
+
+                <p className="text-sm leading-relaxed text-[var(--color-dark)]/80">
                   {leader.bio}
                 </p>
               </div>
