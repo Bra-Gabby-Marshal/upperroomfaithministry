@@ -67,7 +67,7 @@ export default function Leadership() {
         </motion.div>
 
         {/* Leaders Grid */}
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
           {leaders.map((leader, index) => (
             <motion.div
               key={leader.name}
@@ -75,33 +75,28 @@ export default function Leadership() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
-              className="
-                group bg-white rounded-2xl overflow-hidden
-                shadow-md hover:shadow-xl
-                transition-all duration-300
-              "
+              className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300"
             >
-              {/* Image */}
-              <div className="relative h-65 overflow-hidden">
+              {/* Image Container */}
+              <div className="relative w-full aspect-[3/4] sm:aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-t-2xl">
                 <Image
                   src={leader.image}
                   alt={leader.name}
                   fill
                   className="
-                    object-contain object-top
+                    object-cover object-center
                     transition-transform duration-500
                     group-hover:scale-105
-                    filter brightness-110 contrast-105
+                    filter brightness-105 contrast-105
                   "
                 />
               </div>
 
               {/* Content */}
-              <div className="p-5 text-center">
-                <h3 className="text-xl font-serif font-bold mb-1 text-[var(--color-dark)]">
+              <div className="p-6 text-center">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-serif font-bold mb-1 text-[var(--color-dark)] tracking-wide">
                   {leader.name}
                 </h3>
-
                 <p className="text-[var(--color-accent)] font-semibold tracking-wide">
                   {leader.role}
                 </p>
