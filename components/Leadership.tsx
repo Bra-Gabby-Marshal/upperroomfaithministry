@@ -7,7 +7,7 @@ const leaders = [
   {
     name: "Rev. Ahiable Henry",
     role: "Founder",
-    image: "/images/pastor.jpg",
+    image: "/leadership/henry.jpg",
   },
   {
     name: "Mrs. Ahiable Wayo Rejoice",

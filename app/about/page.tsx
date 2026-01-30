@@ -5,6 +5,7 @@ import WhoWeAre from "@/components/WhoWeAre";
 import MissionVision from "@/components/MissionVision";
 import CoreValues from "@/components/CoreValues";
 import Leadership from '@/components/Leadership';
+import Memories from '@/components/Memories';
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -18,6 +19,7 @@ function AboutPage() {
       <MissionVision />
       <CoreValues />
       <Leadership />
+      <Memories />
     </main>
   )
 }
