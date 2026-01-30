@@ -19,6 +19,17 @@ const images = [
   "/memories/10.jpg",
 ];
 
+const SectionHeading = ({ title }: { title: string }) => (
+  <h3
+    className="relative inline-block text-2xl sm:text-3xl lg:text-4xl font-serif font-bold mb-12
+      after:absolute after:left-0 after:-bottom-2
+      after:h-1.5 after:w-24 after:rounded-full
+      after:bg-[var(--color-accent)]"
+  >
+    {title}
+  </h3>
+);
+
 function Memories() {
   const [open, setOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,12 +45,9 @@ function Memories() {
           transition={{ duration: 0.6 }}
           className="text-center mb-24"
         >
-          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold mb-6">
-            Our Early Memories
-          </h3>
-          <p className="max-w-2xl mx-auto text-[var(--color-dark)]/80">
-            Like pages from a sacred album — moments where faith, sacrifice, and
-            love shaped our beginning.
+          <SectionHeading title="Our Leadership" />
+          <p className="max-w-2xl mx-auto text-[var(--color-dark)]/80 leading-relaxed">
+            Like pages from a sacred album — moments where faith, sacrifice, and love shaped our beginning.
           </p>
         </motion.div>
 
