@@ -103,7 +103,7 @@ export default function MissionVision() {
             <img
               src="/osofo-maame.png"
               alt="Mission & Vision"
-              className="rounded-xl shadow-lg w-full h-auto object-fit"
+              className="rounded-xl hidden md:flex shadow-lg w-full h-auto object-contain"
             />
           </motion.div>
         </div>
