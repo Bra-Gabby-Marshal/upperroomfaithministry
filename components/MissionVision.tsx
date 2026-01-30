@@ -48,23 +48,12 @@ export default function MissionVision() {
                   transition={{ duration: 0.7 }}
                   className="bg-white p-8 rounded-xl shadow-md flex flex-col gap-4 hover:shadow-xl transition-shadow duration-300"
                 >
-                  {/* Icon + Title in-line */}
-                  <motion.div className="flex items-center gap-4">
-                    <motion.div
-                      className="w-12 h-12 flex items-center justify-center rounded-full bg-[var(--color-accent)]"
-                      initial={{ y: -5, opacity: 0 }}
-                      animate={{ y: 5, opacity: 1 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 120,
-                        duration: 1.5,
-                        repeat: Infinity,
-                        repeatType: "reverse",
-                      }}
-                      whileHover={{ scale: 1.2 }}
-                    >
+                  {/* Icon + Title */}
+                  <div className="flex items-center gap-4">
+                    {/* Static Icon */}
+                    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[var(--color-accent)]">
                       <Icon className="w-6 h-6 text-[var(--color-primary)]" />
-                    </motion.div>
+                    </div>
 
                     <motion.h4
                       className="text-xl font-serif font-bold text-[var(--color-dark)]"
@@ -75,7 +64,7 @@ export default function MissionVision() {
                     >
                       {card.title}
                     </motion.h4>
-                  </motion.div>
+                  </div>
 
                   {/* Description */}
                   <motion.p
