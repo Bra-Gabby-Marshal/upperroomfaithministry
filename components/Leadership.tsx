@@ -16,7 +16,7 @@ const leaders = [
   },
   {
     name: "Ahiable Kofi Abel",
-    role: "Lead Pastor",
+    role: "Head Pastor",
     image: "/leadership/bilanda.png",
   },
   {
