@@ -28,12 +28,12 @@ export default function EventPage() {
       location: "URFM Auditorium",
       image: "/events/cross-over-2025.jpeg",
     },
-    // {
-    //   title: "Night of Nine Lessons & Carols",
-    //   date: "Wednesday, December 24, 2025",
-    //   location: "URFM Auditorium",
-    //   image: "/events/Lesson-Carols.jpg",
-    // },
+    {
+      title: "Night of Nine Lessons & Carols",
+      date: "Wednesday, December 24, 2025",
+      location: "URFM Auditorium",
+      image: "/events/Lesson-Carols.JPG",
+    },
     {
       title: "Remember Thy God - Youth Program",
       date: "Sunday, December 14, 2025",
