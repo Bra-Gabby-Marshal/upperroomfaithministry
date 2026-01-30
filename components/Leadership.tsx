@@ -5,28 +5,33 @@ import { motion } from "framer-motion";
 
 const leaders = [
   {
-    name: "Rev. [Pastor’s Full Name]",
-    role: "Founder & Lead Pastor",
+    name: "Rev. Ahiable Henry",
+    role: "Founder",
     image: "/images/pastor.jpg",
   },
   {
-    name: "Pastor [Name]",
-    role: "Associate Pastor",
-    image: "/images/associate-pastor.jpg",
+    name: "Mrs. Ahiable Wayo Rejoice",
+    role: "Founder",
+    image: "/leadership/osofo-maame1.png",
   },
   {
-    name: "Elder [Name]",
-    role: "Church Elder",
+    name: "Ahiable Kofi Abel",
+    role: "Lead Pastor",
     image: "/images/elder.jpg",
   },
   {
-    name: "Deacon [Name]",
-    role: "Head Deacon",
+    name: "Nii Armah Donneh",
+    role: "Associate Pastor",
     image: "/images/deacon.jpg",
   },
   {
-    name: "Mrs. [Name]",
-    role: "Women’s Ministry Leader",
+    name: "Akagla Godwin",
+    role: "Elder",
+    image: "/images/women-leader.jpg",
+  },
+  {
+    name: "Yevu Moses",
+    role: "Deacon",
     image: "/images/women-leader.jpg",
   },
 ];
@@ -62,7 +67,7 @@ export default function Leadership() {
         </motion.div>
 
         {/* Leaders Grid */}
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
           {leaders.map((leader, index) => (
             <motion.div
               key={leader.name}
@@ -83,7 +88,7 @@ export default function Leadership() {
                   alt={leader.name}
                   fill
                   className="
-                    object-cover
+                    object-fit
                     transition-transform duration-500
                     group-hover:scale-105
                     filter brightness-110 contrast-105
