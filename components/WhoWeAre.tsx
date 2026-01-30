@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const SectionHeading = ({ title }: { title: string }) => (
-  <h3
+  <h2
     className="relative inline-block text-2xl sm:text-3xl lg:text-4xl font-serif font-bold mb-12
       after:absolute after:left-0 after:-bottom-2
       after:h-1.5 after:w-24 after:rounded-full
       after:bg-[var(--color-accent)]"
   >
     {title}
-  </h3>
+  </h2>
 );
 
 export default function WhoWeAre() {

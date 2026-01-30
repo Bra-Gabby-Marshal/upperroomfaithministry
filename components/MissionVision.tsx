@@ -92,13 +92,19 @@ export default function MissionVision() {
             <img
               src="/osofo-maame.png"
               alt="Mission & Vision"
-              className="      rounded-xl hidden md:flex
+              className="      rounded-xl 
       w-full h-auto object-contain
       filter brightness-110 contrast-105 saturate-110
       drop-shadow-xl
       transition duration-300 ease-in-out
       hover:brightness-115 hover:contrast-110"
-            />
+      //         className="      rounded-xl hidden md:flex
+      // w-full h-auto object-contain
+      // filter brightness-110 contrast-105 saturate-110
+      // drop-shadow-xl
+      // transition duration-300 ease-in-out
+      // hover:brightness-115 hover:contrast-110"
+              />
           </motion.div>
         </div>
       </div>
