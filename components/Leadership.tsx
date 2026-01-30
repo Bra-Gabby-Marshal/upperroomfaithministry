@@ -8,19 +8,26 @@ const leaders = [
     name: "Rev. [Pastor’s Full Name]",
     role: "Founder & Lead Pastor",
     image: "/images/pastor.jpg",
-    bio: "Rev. [Name] is the Founder and Lead Pastor of Upper Room Faith Ministry, called by God to raise believers grounded in faith, prayer, and the Word of God.",
   },
   {
     name: "Pastor [Name]",
     role: "Associate Pastor",
     image: "/images/associate-pastor.jpg",
-    bio: "Pastor [Name] supports the vision of the ministry through teaching, mentorship, and pastoral care.",
   },
   {
     name: "Elder [Name]",
     role: "Church Elder",
     image: "/images/elder.jpg",
-    bio: "Elder [Name] serves with wisdom and integrity, helping guide the church in spiritual growth and leadership.",
+  },
+  {
+    name: "Deacon [Name]",
+    role: "Head Deacon",
+    image: "/images/deacon.jpg",
+  },
+  {
+    name: "Mrs. [Name]",
+    role: "Women’s Ministry Leader",
+    image: "/images/women-leader.jpg",
   },
 ];
 
@@ -38,7 +45,7 @@ const SectionHeading = ({ title }: { title: string }) => (
 export default function Leadership() {
   return (
     <section className="py-24 bg-[var(--color-cream)]">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -55,7 +62,7 @@ export default function Leadership() {
         </motion.div>
 
         {/* Leaders Grid */}
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {leaders.map((leader, index) => (
             <motion.div
               key={leader.name}
@@ -90,12 +97,8 @@ export default function Leadership() {
                   {leader.name}
                 </h3>
 
-                <p className="text-[var(--color-accent)] font-semibold mb-4 tracking-wide">
+                <p className="text-[var(--color-accent)] font-semibold tracking-wide">
                   {leader.role}
-                </p>
-
-                <p className="text-sm leading-relaxed text-[var(--color-dark)]/80">
-                  {leader.bio}
                 </p>
               </div>
             </motion.div>
