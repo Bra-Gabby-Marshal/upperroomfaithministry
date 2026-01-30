@@ -45,7 +45,7 @@ function Memories() {
           transition={{ duration: 0.6 }}
           className="text-center mb-24"
         >
-          <SectionHeading title="Our Leadership" />
+          <SectionHeading title="Our Memories" />
           <p className="max-w-2xl mx-auto text-[var(--color-dark)]/80 leading-relaxed">
             Like pages from a sacred album — moments where faith, sacrifice, and love shaped our beginning.
           </p>
