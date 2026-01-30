@@ -14,6 +14,7 @@ export default function AboutHero() {
       <div className="absolute inset-0 bg-black/55" />
 
       {/* Text Content */}
+      {/* */}
       <div className="relative z-10 flex h-full items-center justify-center text-center px-4">
         <div className="max-w-2xl">
           <h1
