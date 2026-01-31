@@ -5,27 +5,13 @@ import Link from "next/link";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const heroVariants = {
-  hidden: { opacity: 0, y: 32 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.8, ease: "easeOut" },
-  },
-};
-
-const imageVariants = {
-  enter: { opacity: 0 },
-  center: { opacity: 1 },
-  exit: { opacity: 0 },
-};
-
 const images = [
   "/banner-imgs/home-hero-1.jpg",
   "/banner-imgs/home-hero-2.jpg",
   "/banner-imgs/home-hero-3.jpg",
   "/banner-imgs/home-hero-4.jpg",
   "/banner-imgs/home-hero-5.jpg",
+  "/banner-imgs/home-hero-6.jpg",
 ];
 
 export default function HomeHero() {
@@ -52,10 +38,9 @@ export default function HomeHero() {
       <AnimatePresence>
         <motion.div
           key={index}
-          variants={imageVariants}
-          initial="enter"
-          animate="center"
-          exit="exit"
+          initial={{ opacity: shouldReduceMotion ? 1 : 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
           className="absolute inset-0"
         >
@@ -77,9 +62,15 @@ export default function HomeHero() {
       <div className="relative z-10 h-full flex items-center">
         <div className="max-w-6xl mx-auto px-6">
           <motion.div
-            variants={heroVariants}
-            initial={shouldReduceMotion ? "visible" : "hidden"}
-            animate="visible"
+            initial={{
+              opacity: shouldReduceMotion ? 1 : 0,
+              y: shouldReduceMotion ? 0 : 32,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.8, ease: "easeOut" },
+            }}
             className="max-w-2xl"
           >
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-serif font-bold text-white mb-6 leading-tight">
