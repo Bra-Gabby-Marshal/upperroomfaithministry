@@ -4,6 +4,7 @@ import HomeHero from "@/components/HomeHero";
 import ChurchOverview from "@/components/ChurchOverview";
 import AboutPreview from "@/components/AboutPreview";
 import EventsPreview from "@/components/EventsPreview";
+import ContributionsSection from "@/components/ContributionsSection";
 
 export const metadata: Metadata = {
   title: "URFM | Home",
@@ -16,6 +17,7 @@ export default function Home() {
       <ChurchOverview />
       <AboutPreview />
       <EventsPreview />
+      <ContributionsSection />
     </main>
   );
 }
