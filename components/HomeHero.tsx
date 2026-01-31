@@ -31,7 +31,7 @@ export default function HomeHero() {
 
   return (
     <section
-      className="relative h-[70vh] sm:h-[85vh] md:min-h-[520px] max-h-[900px] overflow-hidden"
+      className="relative h-[85vh] min-h-[520px] max-h-[900px] overflow-hidden"
       aria-label="Home hero section"
     >
       {/* Background Image Slider */}
@@ -50,7 +50,7 @@ export default function HomeHero() {
             fill
             priority
             sizes="100vw"
-            className="object-contain sm:object-cover"
+            className="object-cover"
           />
         </motion.div>
       </AnimatePresence>
