@@ -50,7 +50,8 @@ export default function HomeHero() {
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+            quality={100} // highest image quality
+            className="object-cover filter brightness-110 contrast-125 saturate-120 drop-shadow-lg"
           />
         </motion.div>
       </AnimatePresence>
