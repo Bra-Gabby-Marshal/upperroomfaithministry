@@ -69,7 +69,7 @@ export default function ChurchOverviewLeftImage() {
   const infoCards: InfoCard[] = [
     {
       title: "Theme of the Year - 2026",
-      text: "Year of Device Speed",
+      text: "Year of Divine Speed",
       icon: Target,
     },
     {
