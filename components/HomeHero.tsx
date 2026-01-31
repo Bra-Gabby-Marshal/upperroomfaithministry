@@ -18,23 +18,23 @@ export default function HomeHero() {
   const shouldReduceMotion = useReducedMotion();
   const [index, setIndex] = useState(0);
 
-  // Auto slide
+  // Auto slide effect
   useEffect(() => {
     if (shouldReduceMotion) return;
 
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
-    }, 5000); // 5 seconds
+    }, 5000); // 5 seconds per slide
 
     return () => clearInterval(interval);
   }, [shouldReduceMotion]);
 
   return (
     <section
-      className="relative h-[85vh] min-h-[520px] max-h-[900px] overflow-hidden"
+      className="relative h-[70vh] sm:h-[85vh] md:min-h-[520px] max-h-[900px] overflow-hidden"
       aria-label="Home hero section"
     >
-      {/* Sliding Background Images */}
+      {/* Background Image Slider */}
       <AnimatePresence>
         <motion.div
           key={index}
@@ -46,20 +46,20 @@ export default function HomeHero() {
         >
           <Image
             src={images[index]}
-            alt="Upper Room Faith Ministry worship service"
+            alt={`Upper Room Faith Ministry banner ${index + 1}`}
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+            className="object-contain sm:object-cover"
           />
         </motion.div>
       </AnimatePresence>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/80 z-[1]" />
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/80 z-10" />
 
-      {/* Content */}
-      <div className="relative z-10 h-full flex items-center">
+      {/* Hero Content */}
+      <div className="relative z-20 flex items-center h-full">
         <div className="max-w-6xl mx-auto px-6">
           <motion.div
             initial={{
@@ -73,16 +73,16 @@ export default function HomeHero() {
             }}
             className="max-w-2xl"
           >
-            <h1 className="text-4xl md:text-5xl xl:text-6xl font-serif font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight">
               Welcome to <br className="hidden sm:block" />
               <span className="text-[var(--color-accent)]">
                 Upper Room Faith Ministry
               </span>
             </h1>
 
-            <p className="text-white/90 text-lg mb-8 leading-relaxed">
-              A place of worship, faith, prayer, and transformation.
-              Come experience God’s presence and power.
+            <p className="text-white/90 text-lg sm:text-xl mb-8 leading-relaxed">
+              A place of worship, faith, prayer, and transformation. Experience
+              God’s presence and power with us.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -92,10 +92,9 @@ export default function HomeHero() {
               >
                 Learn More
               </Link>
-
               <Link
                 href="/contact"
-                className="border border-white/80 text-white px-6 py-3 rounded-lg hover:bg-black transition"
+                className="border border-white/80 text-white px-6 py-3 rounded-lg hover:bg-black/50 transition"
               >
                 Visit Us
               </Link>
