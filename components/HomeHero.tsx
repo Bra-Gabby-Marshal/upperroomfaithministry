@@ -56,7 +56,7 @@ export default function HomeHero() {
       </AnimatePresence>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/80 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/40 to-black/50 z-10" />
 
       {/* Hero Content */}
       <div className="relative z-20 flex items-center h-full">
