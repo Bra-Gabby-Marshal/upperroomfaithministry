@@ -24,6 +24,7 @@ export async function GET() {
       thumbnail: item.snippet?.thumbnails?.medium?.url || "",
       url: `https://www.youtube.com/watch?v=${item.id?.videoId}`,
       publishedAt: item.snippet?.publishedAt || "",
+      liveStatus: item.snippet?.liveBroadcastContent || "none", // new field
     }));
 
     return NextResponse.json(videos);
