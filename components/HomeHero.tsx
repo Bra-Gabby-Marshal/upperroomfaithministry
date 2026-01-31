@@ -6,6 +6,7 @@ import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const images = [
+  "/banner-imgs/home-hero-7.jpg",
   "/banner-imgs/home-hero-1.jpg",
   "/banner-imgs/home-hero-2.jpg",
   "/banner-imgs/home-hero-3.jpg",

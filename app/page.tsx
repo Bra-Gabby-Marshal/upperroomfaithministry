@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { Metadata } from "next";
 import HomeHero from "@/components/HomeHero";
-import ServiceTimes from "@/components/ServiceTimes";
+import ChurchOverview from "@/components/ChurchOverview";
 import AboutPreview from "@/components/AboutPreview";
 import EventsPreview from "@/components/EventsPreview";
 
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main>
       <HomeHero />
-      <ServiceTimes />
+      <ChurchOverview />
       <AboutPreview />
       <EventsPreview />
     </main>
