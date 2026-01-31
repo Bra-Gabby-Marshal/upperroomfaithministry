@@ -178,7 +178,7 @@ export default function LatestNews() {
 
   if (loading) {
     return (
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[var(--color-cream)]">
         <div className="max-w-6xl mx-auto px-6 text-center text-gray-500">
           Loading Latest YouTube Videos...
         </div>
@@ -188,7 +188,7 @@ export default function LatestNews() {
 
   if (posts.length === 0) {
     return (
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[var(--color-cream)]">
         <div className="max-w-6xl mx-auto px-6 text-center text-gray-500">
           No videos available.
         </div>
@@ -197,7 +197,7 @@ export default function LatestNews() {
   }
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-[var(--color-cream)]">
       <div className="max-w-6xl mx-auto px-6">
         <SectionHeading title="Latest YouTube Posts" />
 

@@ -24,7 +24,7 @@ export default function ContributionsSection() {
   };
 
   return (
-    <section className="py-20 bg-[var(--color-light)]">
+    <section className="py-20 bg-[var(--color-cream)]">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-10">
         {/* Left Image (2/5 on md+) */}
         <div className="md:w-2/5 flex justify-center items-start">
