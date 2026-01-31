@@ -11,6 +11,17 @@ type Post = {
   liveStatus?: "none" | "live" | "upcoming";
 };
 
+const SectionHeading = ({ title }: { title: string }) => (
+  <h3
+    className="relative inline-block text-2xl sm:text-3xl lg:text-4xl font-serif font-bold mb-8
+      after:absolute after:left-0 after:-bottom-2
+      after:h-1.5 after:w-20 after:rounded-full
+      after:bg-[var(--color-accent)]"
+  >
+    {title}
+  </h3>
+);
+
 export default function LatestNews() {
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
@@ -61,9 +72,8 @@ export default function LatestNews() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-8">Latest YouTube Videos</h2>
-
-        <div className="grid md:grid-cols-3 gap-6">
+                    <SectionHeading title="Latest YouTube Posts" />
+       <div className="grid md:grid-cols-3 gap-6 mt-5">
           {posts.map((post) => {
             const thumbnail = post.thumbnail || "/placeholder.png";
             const live = post.liveStatus === "live";
