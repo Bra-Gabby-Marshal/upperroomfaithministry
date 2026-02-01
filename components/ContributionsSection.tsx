@@ -66,7 +66,7 @@ export default function ContributionsSection() {
                   transition={{ duration: 0.4, ease: "easeInOut" }}
                   className="px-6 py-4 bg-gray-50 text-[var(--color-dark)] text-sm"
                 >
-                  <p><span className="font-bold">Bank Name:</span> Ga South Rural Bank</p>
+                  <p><span className="font-bold">Bank Name:</span> Ga Rural Bank</p>
                   <p><span className="font-bold">Account Name:</span> Upper Room Faith Ministry</p>
                   <p><span className="font-bold">Account Number:</span> 1030300201441443</p>
                   <p><span className="font-bold">Branch:</span> Amasaman</p>
