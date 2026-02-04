@@ -22,17 +22,17 @@ const leaders = [
   {
     name: "Nii Armah Donneh",
     role: "Associate Pastor",
-    image: "/images/deacon.jpg",
+    image: "/leadership/donneh.png",
   },
   {
     name: "Akagla Godwin",
     role: "Elder",
-    image: "/images/women-leader.jpg",
+    image: "/leadership/godwin.png",
   },
   {
     name: "Yevu Moses",
     role: "Deacon",
-    image: "/images/women-leader.jpg",
+    image: "/leadership/Moses.png",
   },
 ];
 
